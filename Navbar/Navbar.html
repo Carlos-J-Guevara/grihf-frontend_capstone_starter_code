@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!-- Following code has been commented with appropriate comments for your reference. -->
+<html lang="en">
+<head>
+    <!-- Set the character encoding to UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Set the viewport for responsiveness -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Link the external stylesheet for styling -->
+    <link rel="stylesheet" href="./Navbar.css">
+</head>
+<body>
+  <div class="body-container">
+    <nav>
+        <!-- Navigation logo section -->
+        <div class="nav__logo">
+          <!-- Link to the home page -->
+          <a href="./Navbar.html"> 
+            <!-- Insert an SVG icon of a doctor with a stethoscope -->
+            <img src="../assets/images/logo-central.svg" alt="Company Logo">
+          </a>
+          <!-- A span element for styling purposes -->
+          <span></span>
+        </div>
+        <!-- Navigation icon section with an onClick event listener -->
+        <div class="nav__icon" onClick={handleClick}>
+          <!-- Font Awesome icon for bars (hamburger menu) -->
+          <i class="fa fa-times fa fa-bars"></i>
+        </div>
+
+        <!-- Unordered list for navigation links with 'active' class -->
+        <ul class="nav__links active">
+          <!-- List item for the 'Home' link -->
+          <li class="link">
+            <a href="../Landing_Page/LandingPage.html">Home</a>
+          </li>
+          <!-- List item for the 'Appointments' link -->
+          <li class="link">
+            <a href="#">Appointments</a>
+          </li>
+          <!-- List item for the 'Health Blog' link -->
+          <li class="link">
+            <a href="#">Health Blog</a>
+          </li>
+          <!-- List item for the 'Reviews' link -->
+          <li class="link">
+            <a href="#">Reviews</a>
+          </li>
+
+          <div class="sign-Up-login">
+          <!-- List item for the 'Sign Up' link with a button -->
+          <li class="link">
+            <a href="../Sign_Up//Sign_Up.html">
+              <button class="btn1">Sign Up</button>
+            </a>
+          </li>
+
+          <!-- List item for the 'Login' link with a button -->
+          <li class="link">
+            <a href="../Login/Login.html">
+              <button class="btn1">Login</button>
+            </a>
+          </li>
+          </div>
+        </ul>
+    </nav>
+    <div class="central-image-page">
+        <!-- Central image page-->
+      <img src="../assets/images/center-nav-bar-image.png" alt="image central">
+    </div>
+
+    <div class="text-central-page">
+        <!-- Text over the central image -->
+      <h1>Your Health</h1>
+      <h2>Our Responsibility</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque at quae ducimus. Suscipit omnis quibusdam non cum tem voluptatem!</p>
+      <button class="btn3">Get Started</button>
+
+    </div>
+  </div>  
+</body>
+</html>
