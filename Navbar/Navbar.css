@@ -19,219 +19,190 @@ a {
 
 @media (min-width: 769px){
     /* menu styles  */
-.body-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-nav {
-    padding: 1rem;
-    position: fixed;
-    top: 0%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-/* Styling for the dropdown menu */
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1;
-    display: none;
-    min-width: 120px;
-    padding: 8px 0;
-    background-color: #fff;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    border-radius: 4px;
-}
-
-/* logo at top left */
-.logo-central{
-    display: flex;
-    font-size: 1rem;
-}
-
-/* Styling for the user welcome message */
-.welcome-user {
-    position: relative;
-    cursor: pointer;
-}
-
-/* Display dropdown menu on hover */
-.welcome-user:hover .dropdown-menu {
-    display: block;
-}
-
-/* Styling for the items in the dropdown menu */
-.dropdown-menu li {
-    display: block;
-    width: 150px;
-    padding:5px;
-}
-
-/* Styling for links in the dropdown menu */
-.dropdown-menu li a {
-    color: #333;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-/* Hover effect for links in the dropdown menu */
-.dropdown-menu li a:hover {
-    color: #2190ff;
-}
-
-/* Styling for the logo in the navbar */
-.nav__logo img{
-    width: 12rem;
-    margin-left: 4.5rem;
-}
-
-/* Styling for the icon in the navbar */
-.nav__icon {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-}
-
-/* Styling for the navigation links */
-.nav__links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1rem;
-    font-weight: 500;
-}
-
-/* Styling for individual links in the navigation */
-.link a {
-    padding: 0 1rem;
-    color: #0d213f;
-    transition: 0.3s;
-}
-
-/* Hover effect for individual links in the navigation */
-.link a:hover {
-    color: #3685fb;
-}
-
-/* Keyframes for slide down animation */
-@keyframes slideDown {
-    0% {
-        transform: translateY(-10px);
-        opacity: 0;
+    .body-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
+
+    nav {
+        padding: 1rem;
+        position: fixed;
+        top: 0%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
-}
 
-/* Button styles */
-.btn1 {
-    border: 0.1rem solid #3187F8;
-    background-color: white;
-    color: black;
-    border-radius: 1.5rem;
-    padding: 0.8rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    margin-left:0.2rem;
-}
+    /* logo at top left */
+    .logo-central{
+        display: flex;
+        font-size: 1rem;
+    }
 
-.btn1:hover {
-   color:#3187F8; 
-}
+    /* Styling for the user welcome message */
+    .welcome-user {
+        position: relative;
+        cursor: pointer;
+    }
 
-.btn2 {
-    border: 2px solid #3685fb;
-    background-color: white;
-    color: black;
-    border-radius: 50px;
-    height:30px;
-    display:flex; /* Align items and justify content */
-    align-items:center; /* Align items and justify content */
-    justify-content:center; /* Align items and justify content */
-    margin-top:3px; /* Margin from top */
-}
+    /* Display dropdown menu on hover */
+    .welcome-user:hover .dropdown-menu {
+        display: block;
+    }
 
-.btn2:hover {
-    background-color:#3685fb; /* Hover effect */
-    color:white; /* Hover effect */
-}
+    /* Styling for the logo in the navbar */
+    .nav__logo img{
+        width: 15vw;
+        margin-left: 5vw;
+    }
 
-.sign-Up-login{
-    display: flex;
-    flex-direction: row;
-    margin-right: 4.5rem;
-}
+    /* Styling for the navigation links */
+    .nav__links {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1vw;
+        font-weight: 500;
+    }
 
-.central-image-page img{
-    width: 60vw;
-    margin-top: 6rem;
-    margin-left: 21rem;
-}
+    /* Styling for individual links in the navigation */
+    .link a {
+        padding: 0 1rem;
+        color: #0d213f;
+        transition: 0.3s;
+    }
 
-.text-central-page{
-    position: absolute;
-    bottom:10rem;
-    left: 20rem;
-}
+    /* Hover effect for individual links in the navigation */
+    .link a:hover {
+        color: #3685fb;
+    }
 
-.text-central-page h1{
-    position:absolute;
-    font-size: 3.5rem;
-    left: 9rem;
-    bottom: 8rem;
-}
+    /* Keyframes for slide down animation */
+    @keyframes slideDown {
+        0% {
+            transform: translateY(-10px);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
 
-.text-central-page h2{
-    position:absolute;
-    font-size: 3.5rem;
-    left: 3rem;
-    bottom: 3rem;
-    background-image: linear-gradient(to right, #3187F8, black); /* Your desired start and end colors */
-    -webkit-background-clip: text; /* For WebKit browsers (Chrome, Safari) */
-    background-clip: text;
-    color: transparent; 
-}
+    /* Button styles */
+    .btn1 {
+        border: 0.1rem solid #3187F8;
+        background-color: white;
+        color: black;
+        border-radius: 2vw;
+        padding: 1vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        margin-left:0.3vw;
+        font-size: 1.1vw;
+    }
 
-.text-central-page p{
-    position: relative;
-    font-size: inherit;
-    max-width: 80%; 
-    text-align: center;
-    right: 5rem;
-    bottom: 1.5rem;
-}
+    .btn1:hover {
+    color:#3187F8; 
+    }
 
-.text-central-page button{
-    position: absolute;
-    left: 13rem;
-    top: 3rem;
-    font-size: inherit;
-    text-align: center;
-    border: none;
-    background-color: white;
-    color: white;
-    border-radius: 1.5rem;
-    padding: 0.8rem;
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-    background-image: linear-gradient(to right, #3187F8, black);
-}
+    .btn2 {
+        border: 2px solid #3685fb;
+        background-color: white;
+        color: black;
+        border-radius: 50px;
+        height:30px;
+        display:flex; /* Align items and justify content */
+        align-items:center; /* Align items and justify content */
+        justify-content:center; /* Align items and justify content */
+        margin-top:3px; /* Margin from top */
+    }
 
-.text-central-page button:hover {
-    color: #3187F8; 
-}
+    .btn2:hover {
+        background-color:#3685fb; /* Hover effect */
+        color:white; /* Hover effect */
+    }
+
+    .sign-Up-login{
+        display: flex;
+        flex-direction: row;
+        margin-right: 5vw;
+    }
+
+    .central-image-page{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .central-image-page img{
+        width: 60vw;
+        height: 80vh;
+        margin-top: 8vw;
+        margin-left: 28vw;
+    }
+
+    .text-central-page{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translate(0,-5rem);
+    }
+
+    .text-central-page h1{
+        font-size: 4.2vw;
+        position: absolute;
+        bottom: 15vw;
+    }
+
+    .text-central-page h2{
+        font-size: 4.2vw;
+        background-image: linear-gradient(to right, #3187F8, black); /* Your desired start and end colors */
+        -webkit-background-clip: text; /* For WebKit browsers (Chrome, Safari) */
+        background-clip: text;
+        color: transparent; 
+        position: absolute;
+        bottom: 9vw;
+    }
+
+    .text-central-page p{
+        font-size: 1.5vw;
+        max-width: 80%; 
+        text-align: center;
+        position: absolute;
+        bottom: 6vw;
+    }
+
+    .text-central-page button{
+        font-size: 1.3vw;
+        text-align: center;
+        border: none;
+        background-color: white;
+        color: white;
+        border-radius: 2vw;
+        padding: 1vw;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        background-image: linear-gradient(to right, #3187F8, black);
+        position: absolute;
+        bottom: 2vw;
+    }
+
+    .text-central-page button:hover {
+        color: #3187F8; 
+    }
 }
 
 
@@ -274,5 +245,38 @@ nav {
     background-color: white;
     color: black;
     border-radius: 50px;
+    }
+
+    /* Styling for the items in the dropdown menu */
+    .dropdown-menu li {
+        display: block;
+        width: 150px;
+        padding:5px;
+    }
+
+    /* Styling for links in the dropdown menu */
+    .dropdown-menu li a {
+        color: #333;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    /* Hover effect for links in the dropdown menu */
+    .dropdown-menu li a:hover {
+        color: #2190ff;
+    }
+
+    /* Styling for the dropdown menu */
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 1;
+        display: none;
+        min-width: 120px;
+        padding: 8px 0;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 4px;
     }
 }

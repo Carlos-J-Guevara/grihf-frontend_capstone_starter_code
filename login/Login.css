@@ -1,4 +1,15 @@
 /* Styles for the main container */
+.body-container{
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: inter, sans-serif; /* Font family for the entire body */
+    position:absolute;
+    bottom: 30px;
+}
+
 .container {
     max-width: 900px; /* Maximum width of the container */
     margin: 0 auto; /* Center the container horizontally */
@@ -20,7 +31,7 @@
 
 /* Styles for form controls */
 .form-control {
-    width: 40%; /* Width of form controls */
+    width: 95%; /* Width of form controls */
     padding: 8px; /* Padding inside form controls */
     font-size: 16px; /* Font size of form controls */
     border: 1px solid #ccc; /* Border around form controls */
@@ -31,25 +42,57 @@
 .btn-group {
     margin-top: .0001px; /* Top margin for spacing above button groups */
     margin-bottom: 20px; /* Bottom margin for spacing below button groups */
+    display: flex; /* Use flexbox for button group layout */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Styles for buttons */
 .btn {
-    padding: 10px 20px; /* Padding inside buttons */
+    padding: 10px 141px; /* Padding inside buttons */
     font-size: 16px; /* Font size of buttons */
     border: none; /* No border for buttons */
     border-radius: 4px; /* Border radius for rounded corners on buttons */
     cursor: pointer; /* Cursor style on hover for buttons */
+    margin-top: 10px; /* Top margin for spacing above buttons */
 }
 
 /* Styles for primary buttons */
 .btn-primary {
-    background-color: #007bff; /* Background color for primary buttons */
+    background-color: #3187F8; /* Background color for primary buttons */
     color: #fff; /* Text color for primary buttons */
 }
 
 /* Styles for danger (red) buttons */
 .btn-danger {
-    background-color: #dc3545; /* Background color for danger buttons */
+    background-color: black; /* Background color for danger buttons */
     color: #fff; /* Text color for danger buttons */
+}
+
+.login-text-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.forgot-password-class{
+    font-size: 1.1vw;
+    position: relative;
+    bottom: 20px;
+}
+
+.forgot-password-class a{
+    text-decoration: none;
+    color: black;
+}
+
+.login-text-div-login{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
